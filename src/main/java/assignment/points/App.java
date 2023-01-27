@@ -2,7 +2,7 @@ package assignment.points;
 import java.util.Scanner;
 public class App 
 {
-    public static void main( String[] args ) throws CloneNotSupportedException
+    public static void main( String[] args )
     {
     	Scanner sc = new Scanner(System.in);
     	System.out.print("Enter Value for x:");
@@ -12,7 +12,8 @@ public class App
     	sc.close();
     	
         PointLogic obj= new PointLogic(x,y);
-        PointLogic obj2 =(PointLogic)obj.clone();
+        PointLogic obj2 =obj.point();
+        
         System.out.println(obj2.testEqual());
     }
 }

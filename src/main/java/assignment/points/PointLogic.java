@@ -11,8 +11,17 @@ public class PointLogic implements Cloneable{
     {
 		return x.equals(y);
 	} 
-	protected Object clone() throws CloneNotSupportedException {
-		return super.clone();
+	
+	PointLogic point() {
+		try {
+			return (PointLogic) super.clone();
+			
+		}catch(CloneNotSupportedException e) {
+			System.out.println("cloning");
+			return this;
+			
+		}
+		
 	}
 
 }
