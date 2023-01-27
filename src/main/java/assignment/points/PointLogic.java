@@ -10,6 +10,7 @@ public class PointLogic implements Cloneable{
         boolean testEqual() {
 		return x.equals(y);
 	} 
+	@Override
 	public Object clone() throws CloneNotSupportedException {
 		return super.clone();
 	}
