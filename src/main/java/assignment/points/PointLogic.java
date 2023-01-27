@@ -16,7 +16,7 @@ public class PointLogic implements cloneable{
 			return (PointLogic) super.clone();
 			
 		}catch(CloneNotSupportedException e) {
-			System.out.println("cloning");
+			System.out.println("cloning error");
 			return this;
 			
 		}
