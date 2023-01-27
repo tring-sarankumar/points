@@ -7,10 +7,10 @@ public class PointLogic implements Cloneable{
 		this.x=x;
 		this.y=y;
 	}
-    boolean testEqual() 
-    {
+        boolean testEqual() {
 		return x.equals(y);
 	} 
+<<<<<<< HEAD
 	
 	PointLogic point() {
 		try {
@@ -22,6 +22,11 @@ public class PointLogic implements Cloneable{
 			
 		}
 		
+=======
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+>>>>>>> 983894a15a85f6f7fddeef6e06fa8c91dbf3193e
 	}
 
 }
