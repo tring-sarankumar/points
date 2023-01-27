@@ -1,6 +1,6 @@
 package assignment.points;
 
-public class PointLogic implements Cloneable{
+public class PointLogic implements cloneable{
 	Float x;
 	Float y;
 	PointLogic(Float x,Float y){
