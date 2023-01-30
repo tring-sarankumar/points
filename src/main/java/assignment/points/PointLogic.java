@@ -2,7 +2,7 @@ package assignment.points;
 
 import java.util.logging.Logger;
 
-public class PointLogic implements Cloneable{
+public class PointLogic implements cloneable{
 
 	Float x;
 	Float y;
