@@ -1,19 +1,21 @@
 package assignment.points;
 import java.util.Scanner;
-public class App 
+import java.util.logging.Logger;
+public class Points 
 {
     public static void main( String[] args )
     {
+    	Logger log =  Logger.getLogger("points");
     	Scanner sc = new Scanner(System.in);
-    	System.out.print("Enter Value for x:");
+    	log.info("Enter Value for x:");
     	Float x = sc.nextFloat();
-    	System.out.print("Enter Value for y:");
+    	log.info("Enter Value for y:");
     	Float y = sc.nextFloat();
     	sc.close();
     	
         PointLogic obj= new PointLogic(x,y);
         PointLogic obj2 =obj.point();
         
-        System.out.println(obj2.testEqual());
+        log.info(Boolean.toString(obj2.testEqual()));
     }
 }
