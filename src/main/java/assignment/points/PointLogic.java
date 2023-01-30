@@ -3,6 +3,7 @@ package assignment.points;
 import java.util.logging.Logger;
 
 public class PointLogic implements Cloneable{
+
 	Float x;
 	Float y;
 	Logger log =  Logger.getLogger("PointLogic");
@@ -20,6 +21,7 @@ public class PointLogic implements Cloneable{
 			
 		}catch(CloneNotSupportedException e) {
 			log.info("error"+e);
+			System.out.println("cloning error");
 			return this;
 			
 		}
