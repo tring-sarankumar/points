@@ -16,7 +16,7 @@ public class Points
         PointLogic obj= new PointLogic(x,y);
         PointLogic obj2 =obj.point();
         
-        if((obj2.testEqual())==true) {
+        if(obj2.testEqual()) {
         	log.info("Values are same");
         }
         else {
